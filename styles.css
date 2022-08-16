@@ -1,0 +1,149 @@
+html, body{
+padding:0;
+margin:0;
+}
+:root{
+    --mainColor: #c0bbbb;
+    --secondaryColor: #fff;
+
+    --borderColor: #c1c1c1;
+    --themeDotBorder:#24292e;
+
+
+    --mainText: black;
+    --secondaryText: #4b5156;
+}
+
+h1,h2,h3,h4,h5,h6,Strong{
+    color: var(--mainText);
+    font-weight: 500;
+
+}
+h1{font-size: 40px;}
+h2{font-size: 36px;}
+h3{font-size: 28px;}
+h4{font-size: 24px;}
+h5{font-size: 20px;}
+h6{font-size: 16px;}
+p, li,span,input, textarea{
+ color:var(--mainText);
+ font-family : 'Russo One', sans-serif;
+}
+.s1{
+    background-color: var(--mainColor);
+    border-bottom : 1px solid var(--borderColor);
+}
+.s2{
+    background-color:   var(--secondaryColor);
+   border-bottom : 1px solid var(--border);
+}
+.greeting-wrapper{
+ display: grid;  
+ min-height: 10em;
+ justify-content: center;
+ align-content: center;
+ margin-bottom: 5px;
+}
+.intro-wrapper{
+    display: grid;
+    grid-template-columns:1fr 1fr ;
+    grid-template-areas: "nav nav"
+                        " left-col right-col";
+    grid-template-rows: 3em 20em ;
+}
+.nav-wrapper{
+    grid-area: nav;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(204, 196, 196);
+}
+.left-col{
+    grid-area: left-col;
+}
+#profile-pic{
+  width: 180px;
+  height: 200px;
+  object-fit:cover;
+  border: 2px solid var(--borderColor);
+  display: block;
+  margin: 0 auto;
+}
+.theme-dot{
+    height: 30px;
+    width: 30px;
+    background-color: black;
+    border-radius: 50%;
+    border: 2px solid var(--themeDotBorder);
+    margin: 5px;
+    cursor: pointer;
+}
+.theme-dot:hover{
+    border-width: 5px;
+}
+#light-mode{
+    background-color: #fff;
+}
+#blue-mode{
+    background-color: #192734;
+}
+#green-mode{
+    background-color:#78866b;
+}
+
+
+
+#theme-options-wrapper{
+    display: flex;
+    justify-content: center;
+    
+}
+.right-col{
+    grid-area: right-col;
+}
+
+.browser-dot{
+    background-color: black;
+    height:15px;
+    width: 15px;
+    border-radius: 50%;
+    margin: 5px
+}
+.dots-wrapper{
+    
+    display:flex;
+}
+
+#dot-1{
+background-color: #FC6058;
+}
+#dot-2{
+    background-color: #8efa8a;
+}
+#dot-3{
+    background-color:#f9d78d ;
+}
+#navigation{
+    margin: 0;
+    padding:5px;
+}
+/* not working */
+li #navigation {
+    display: inline-flex;
+    
+}
+#about-me{
+    width: 95%;
+    border: 1px solid # ;
+}
+
+.main-container{
+    width: 1200px;
+    margin : 0 auto ;
+
+}
+@media screen and (max-width:1200px)   {
+    .main-container{
+        width: 95%;
+    }
+}
