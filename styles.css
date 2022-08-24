@@ -131,14 +131,13 @@ background-color: #FC6058;
     background-color:#f9d78d ;
 }
 #navigation{
+    display: grid;
     margin: 0;
+    background-color: black;
     padding:5px;
 }
 /* not working */
-li #navigation {
-    display: inline-flex;
-    
-}
+
 #about-me{
     width: 95%;
     border: 1px solid white ;
